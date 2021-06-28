@@ -7,5 +7,25 @@ body.fade-out {
     transition: none;
 }
 html {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.336);
+    scroll-behavior: smooth;
+}
+img{
+    float: right;
+    height: 50%;
+    width: 50%;
+}
+@keyframes zoominoutsinglefeature {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform:(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+.single-feature-image-header img {
+        animation: zoominoutsinglefeature 15s forwards;
 }
