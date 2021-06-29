@@ -39,5 +39,72 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!DOCTYPE html>
+    <script src="react.js" defer></script>
+</head>
+<body>
+    <!-- Form function-->
+    <a href="form">Form</a>
+<form id="myForm" >
+    <label for="fname">Fitst Name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <input type="submit" id="submitForm" name="Submit">
+
+</form>
+<a href="mailto:raleigh.j55@gmail.com"><p>Send me an Email!</p></a>
+
+
+
+</form>
+
+<img id="zoominoutsinglefeature" src="IMG_0997.jpg">
+
+<style>
+div {
+    width:100px;
+    height:100px;
+    background:red;
+    position:relative;
+    animation:mymove 5s infinite;
+}
+@keyframes mymove {
+    from{top:0px;}
+    to{top: 200px;}
+}
+
+
+</style>
+
+<div id='JSX'></div>
+
+
+
+
+
+
+
+
+</body>
+<h3 style="font-size:8vw;">Howdythere</h3>
+<script type="text/babel">
+class Greeting extends React.Component {
+    render() {
+        return <h1> Hello, World!</h1>
+    }
+}
+ReactDOM.render(<Greeting />, document.getElementById('JSX'))
+</script>
+
+
+
+
+</html>
+
+
+
+
+
   </body>
 </html>
